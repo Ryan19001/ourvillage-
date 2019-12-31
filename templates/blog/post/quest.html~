@@ -1,0 +1,12 @@
+{% extends "blog/base.html" %}
+{% block title %} You must answer to this {% endblock %}
+
+{% block content %}
+<form class="questform" action="." method="POST">
+ <label for="id_answer">{{ ob.question}}</label>
+ {{ form.answer }}
+  
+  {% csrf_token %}
+  <input type="submit"  value="answer">
+</form>
+{% endblock %}

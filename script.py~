@@ -1,0 +1,7 @@
+from blog.models import Quest2Check, CheckIfFromForm, Answer
+from django.forms import modelformset_factory, inlinforomset_factory
+ob = Quest2Check.objects.all()
+Quest = inlineformset_factory(Answer, Quest2Check, fields=('answer',), form=CheckIfFromForm)
+#for form in Quest(queryset=ob):
+ #   help(form.__init__)
+help(Quest.__init__)

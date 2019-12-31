@@ -1,0 +1,142 @@
+
+@font-face {
+	font-family: "Ampersand";
+	src: url('/static/font/Gothix.ttf') format('truetype');
+}
+body {
+    height: 100vh;
+    background: rgb(234, 229, 214);
+    
+}
+header {
+	position: absolute;
+	left: 35%;
+	padding: 20px 30px 20px 30px;
+	text-shadow: 0 3px 3px tomato;
+	font-size: 60px;
+
+}
+.date {
+    color: rgb(50, 75, 133);
+    font-size: 10px;
+}
+
+.navbar {
+	width: 100%;
+	height: 125px;
+	background: rgb(114, 135, 180);
+	box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, .4);
+
+}
+.navbar img {
+	position: absolute;
+	right: 60px;
+	top: 50px;
+
+}
+.a_nav img {
+	position: absolute;
+	left: 60px;
+	top: 50px;
+		  
+
+}
+.m_container{
+    position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.welcome {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    padding: 0 50px 0 50px;
+	transform: translate(-50%, -50%);
+	color: rgb(221, 124, 80 );
+	background: rgba(255, 255, 250, .7);
+	border: 1px solid rgb(270, 216, 58);
+	box-shadow: 8px 8px 8px 8px rgba(1,1,1,.5);
+	font-size: 50px;
+	font-weight: bold;
+	
+}
+.welcome h1{
+	font-family: 'Ampersand';
+
+	text-align: center;
+
+}
+.welcome p{
+	color: rgb(34, 50, 80);
+	font-style: italic;
+	text-align: center;
+	font-size: 35px;
+
+}
+.welcome i{
+	background: rgb(270, 216, 58);
+}
+.welcome img{
+	position: absolute;
+	top: 26%;
+	right: 6%;
+	transform: rotate(-5deg)
+}
+
+#sidebar, #content {
+    background: rgba(256, 256, 256, .5);
+    font-size: 2em;
+
+}
+#content h1{
+    font-family: "Ampersand";
+    color: rgb(221, 124, 10);
+    background: rgb(270, 216, 58);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, .3);
+
+}
+.questform {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+.questform label {
+
+    font-size: 45px;
+    font-weight: bold;
+    color: rgb(50, 75, 133);
+    margin: 30px 100px 30px 30px;
+ 
+}
+
+.questform input[type="text"] {
+    border: 4px solid rgb(24, 94, 189 );
+    box-shadow: 3px 3px 3px 3px rgba( 0, 0, 0, .4);
+    border-radius: 50px;
+    font-size: 40px;
+    padding: 5px;
+    height: 80px;
+    margin: 30px;
+}
+.questform {
+    background: linear-gradient(45deg, #fff, transparent 90%);
+    border: 3px solid rgb(114, 135, 180);
+    border-radius: 20px;
+    margin-top: 100px;
+    box-shadow: 5px 5px 5px 5px rgba( 0, 0, 0, .4);
+
+}
+.questform input[type="submit"] {
+    width: 300px;
+    height: 80px;
+    background: rgb(114, 135, 180);
+    border: 2px solid gray;
+    border-radius: 50px;
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, .6);
+    margin: 30px 20px 30px 30px;
+    font-size: 35px;
+    color: #fff;
+    text-transform: uppercase;
+}

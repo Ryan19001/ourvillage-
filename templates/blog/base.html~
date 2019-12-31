@@ -1,0 +1,42 @@
+{% load static %}
+<!doctype>
+<html>
+  <head>
+    <title>{% block title %}{% endblock %}</title>
+    <link href="{% static "css/blog.css" %}" rel="stylesheet">
+  </head>
+
+<body>
+<header>
+  our village
+ </header>
+<div class="navbar"><img src="{% static "img/search.svg" %}" width="60px" height="60px">
+  <a class="a_nav"><img src="{% static "img/bars.svg"%}" width="60px" height="60px">
+  </a>
+</div>
+<div class="m_container">
+<div class="welcome">
+<!--  <h1>Welcome</h1>
+  <img src="{% static  "img/underline.png" %}">
+  <P>
+    Hello are from our village "Mouhassan" if you from please <i>sign up</i> and provide us some informations about you
+    <a href="{% url "blog:quest_visitor" %}">Quest to this</a>
+    </p>-->
+</div>
+</div>
+<div id="content">
+  {% block content%}
+  {% endblock %}
+</div>
+
+<!-- <div id="sidebar">
+  <h2>My Blog</h2>
+  <p>this my blog</p>
+</div>
+-->
+    <a href="{% url "blog:quest_visitor" %}">Quest to this</a>
+<address>
+<a href="mailto:u0_a183@localhost">unknown</a>
+</address>
+</body>
+</html>

@@ -1,0 +1,25 @@
+from django.contrib import admin
+from .models import Post, Mouhassan, Quest2Check, Answer
+@admin.register(Post)
+# Register your models here.
+
+class PostAdmin(admin.ModelAdmin):
+    list_diaplay = ('title','slug','author','publish','status')
+    list_filter = ('status','created','publish','author',)
+    search_fields = ('title','body')
+    prepopulated_fields = {'slug':('title',)}
+    raw_id_fields = ('author',)
+    date_hierarchy = 'publish'
+    ordering = ('status', 'publish')
+
+@admin.register(Mouhassan)
+class MouhassanAdmin(admin.ModelAdmin):
+    list_diaplay = ('neibourhood')
+
+@admin.register(Quest2Check)
+class Quest2CheckAdmin(admin.ModelAdmin):
+    list_display = ('question',)
+
+@admin.register(Answer)
+class Quest2CheckAdmin(admin.ModelAdmin):
+    list_display = ('answer',)

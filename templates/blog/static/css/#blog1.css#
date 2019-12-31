@@ -1,0 +1,82 @@
+@font-face {
+	font-family: "Ampersand";
+	src: url('/static/font/Gothix.ttf') format('truetype');
+}
+body {
+    background: linear-gradient(#DD5E89 , #F7BB97);
+}
+header {
+	position: absolute;
+	left: 35%;
+	padding: 20px 30px 20px 30px;
+	text-shadow: 0 3px 3px tomato;
+	font-size: 60px;
+	background: rgb(270, 216, 58);
+	background: linear-gradient(135deg,  transparent 15px, rgb(270, 216, 58) 0)  top left, linear-gradient(-135deg, transparent 15px, rgb(270, 216, 58) 0)  top right, linear-gradient(-45deg, transparent 15px, rgb(270, 216, 58) 0)  bottom right, linear-gradient(45deg, transparent 15px, rgb(270, 216, 58) 0)  bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	
+
+}
+.navbar {
+	width: 100%;
+	height: 125px;
+	background: rgba(62, 49, 73, .8);
+	box-shadow: 6px 6px 6px 6px rgba(250, 22, 58, .4);
+
+}
+.navbar img {
+	position: absolute;
+	right: 60px;
+	top: 50px;
+
+}
+.a_nav img {
+	position: absolute;
+	left: 60px;
+	top: 50px;
+		  
+
+}
+.m_container{
+    position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.welcome {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    padding: 0 50px 0 50px;
+	transform: translate(-50%, -50%);
+	color: rgb(221, 124, 80 );
+	background: rgba(255, 255, 250, .7);
+	border: 1px solid rgb(270, 216, 58);
+	box-shadow: 8px 8px 8px 8px rgba(1,1,1,.5);
+	font-size: 50px;
+	font-weight: bold;
+	
+}
+.welcome h1{
+	font-family: 'Ampersand';
+
+	text-align: center;
+
+}
+.welcome p{
+	color: rgb(34, 50, 80);
+	font-style: italic;
+	text-align: center;
+	font-size: 35px;
+
+}
+.welcome i{
+	background: rgb(270, 216, 58);
+}
+.welcome img{
+	position: absolute;
+	top: 26%;
+	right: 6%;
+	transform: rotate(-5deg)
+}
